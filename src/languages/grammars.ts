@@ -161,7 +161,10 @@ export function loadGrammarPackage(npmPackage: string): GrammarModule {
         "install",
         "--prefix",
         cacheDir,
-        "--no-save",
+        // Record each install in the cache package.json. With --no-save the
+        // next install prunes every grammar not listed there, so a repo with
+        // two on-demand languages reinstalled both on every run.
+        "--save-exact",
         "--no-fund",
         "--no-audit",
         "--legacy-peer-deps",
