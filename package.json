@@ -1,6 +1,6 @@
 {
   "name": "calldiff",
-  "version": "0.6.0",
+  "version": "0.6.0-2lab.1",
   "description": "Diff call stacks across git commits for agentic code review (23 languages)",
   "type": "module",
   "exports": {
@@ -13,7 +13,8 @@
     "calldiff": "dist/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "npm-shrinkwrap.json"
   ],
   "scripts": {
     "build": "tsc",
@@ -67,5 +68,11 @@
     "tsx": "^4.20.3",
     "typescript": "^5.9.2",
     "vitest": "^4.1.10"
-  }
+  },
+  "bundleDependencies": [
+    "incur",
+    "picocolors",
+    "tree-sitter",
+    "tree-sitter-typescript"
+  ]
 }

@@ -1,12 +1,12 @@
 {
   "name": "calldiff",
-  "version": "0.6.0",
+  "version": "0.6.0-2lab.1",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
       "name": "calldiff",
-      "version": "0.6.0",
+      "version": "0.6.0-2lab.1",
       "license": "MIT",
       "dependencies": {
         "incur": "^0.4.26",
@@ -27,7 +27,7 @@
         "vitest": "^4.1.10"
       },
       "engines": {
-        "node": ">=22"
+        "node": ">=22.18.0"
       }
     },
     "node_modules/@cfworker/json-schema": {
